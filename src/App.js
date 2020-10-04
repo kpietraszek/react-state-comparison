@@ -9,6 +9,7 @@ import ReduxAdvancedApp from './redux-advanced';
 import ReduxToolkitApp from './redux-toolkit';
 import ReactSweetStateApp from './react-sweet-state';
 import ReactMobXApp from './react-mobx';
+import RecoilApp from './recoil';
 
 const App = () => (
     <Router>
@@ -33,6 +34,9 @@ const App = () => (
             </Route>
             <Route path="/mobx-react">
                 <ReactMobXApp />
+            </Route>
+            <Route path="/recoil">
+                <RecoilApp />
             </Route>
             <Route path="/">
                 <ul>
@@ -63,6 +67,9 @@ const App = () => (
                         <Link to="/react-sweet-state">
                             react-sweet-state example
                         </Link>
+                    </li>
+                    <li>
+                        <Link to="/recoil">recoil example</Link>
                     </li>
 
                     <li>
